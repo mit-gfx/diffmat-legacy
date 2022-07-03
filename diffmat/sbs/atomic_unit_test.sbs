@@ -1,0 +1,1950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+    <identifier v="Unsaved Package"/>
+    <formatVersion v="1.1.0.201902"/>
+    <updaterVersion v="1.1.0.201902"/>
+    <fileUID v="{c90139be-8e2f-48c2-9c18-5fca2df7200f}"/>
+    <versionUID v="0"/>
+    <dependencies>
+        <dependency>
+            <filename v="sbs://pattern_checker_1.sbs"/>
+            <uid v="1353682276"/>
+            <type v="package"/>
+            <fileUID v="0"/>
+            <versionUID v="0"/>
+        </dependency>
+        <dependency>
+            <filename v="sbs://pattern_fibers_2.sbs"/>
+            <uid v="1353697221"/>
+            <type v="package"/>
+            <fileUID v="0"/>
+            <versionUID v="0"/>
+        </dependency>
+        <dependency>
+            <filename v="sbs://pattern_mesh_1.sbs"/>
+            <uid v="1353697365"/>
+            <type v="package"/>
+            <fileUID v="0"/>
+            <versionUID v="0"/>
+        </dependency>
+        <dependency>
+            <filename v="sbs://noise_bnw_spots_2.sbs"/>
+            <uid v="1354262817"/>
+            <type v="package"/>
+            <fileUID v="0"/>
+            <versionUID v="0"/>
+        </dependency>
+        <dependency>
+            <filename v="sbs://noise_crystal_2.sbs"/>
+            <uid v="1354185149"/>
+            <type v="package"/>
+            <fileUID v="0"/>
+            <versionUID v="0"/>
+        </dependency>
+        <dependency>
+            <filename v="sbs://materials/pbr/bricks_005.sbs"/>
+            <uid v="1353708623"/>
+            <type v="package"/>
+            <fileUID v="0"/>
+            <versionUID v="0"/>
+        </dependency>
+        <dependency>
+            <filename v="sbs://materials/pbr/gravel.sbs"/>
+            <uid v="1353715945"/>
+            <type v="package"/>
+            <fileUID v="0"/>
+            <versionUID v="0"/>
+        </dependency>
+        <dependency>
+            <filename v="sbs://materials/pbr/tiles_008.sbs"/>
+            <uid v="1353739003"/>
+            <type v="package"/>
+            <fileUID v="0"/>
+            <versionUID v="0"/>
+        </dependency>
+    </dependencies>
+    <content>
+        <graph>
+            <identifier v="New_Graph"/>
+            <uid v="1353681061"/>
+            <paraminputs>
+                <paraminput>
+                    <identifier v="input"/>
+                    <uid v="1353903222"/>
+                    <isConnectable v="1"/>
+                    <type v="2"/>
+                    <defaultWidget>
+                        <name v=""/>
+                        <options/>
+                    </defaultWidget>
+                </paraminput>
+            </paraminputs>
+            <primaryInput v="1353903222"/>
+            <graphOutputs/>
+            <compNodes>
+                <compNode>
+                    <uid v="1353697185"/>
+                    <GUILayout>
+                        <gpos v="176 112 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353697186"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <compImplementation>
+                        <compInstance>
+                            <path v="pkg:///checker_1?dependency=1353682276"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="rotate_45_degrees"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueBool v="1"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                            <outputBridgings>
+                                <outputBridging>
+                                    <uid v="1353697186"/>
+                                    <identifier v="output"/>
+                                </outputBridging>
+                            </outputBridgings>
+                        </compInstance>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353697343"/>
+                    <GUILayout>
+                        <gpos v="176 240 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353697344"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <compImplementation>
+                        <compInstance>
+                            <path v="pkg:///fibers_2?dependency=1353697221"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="Tiling"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueInt32 v="2"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                            <outputBridgings>
+                                <outputBridging>
+                                    <uid v="1353697344"/>
+                                    <identifier v="output"/>
+                                </outputBridging>
+                            </outputBridgings>
+                        </compInstance>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353697444"/>
+                    <GUILayout>
+                        <gpos v="176 368 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353697445"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <compImplementation>
+                        <compInstance>
+                            <path v="pkg:///mesh_1?dependency=1353697365"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="Tiling"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueInt32 v="5"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                            <outputBridgings>
+                                <outputBridging>
+                                    <uid v="1353697445"/>
+                                    <identifier v="output"/>
+                                </outputBridging>
+                            </outputBridgings>
+                        </compInstance>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353707634"/>
+                    <GUILayout>
+                        <gpos v="176 496 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353707635"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <compImplementation>
+                        <compInstance>
+                            <path v="pkg:///bnw_spots_2?dependency=1354262817"/>
+                            <parameters/>
+                            <outputBridgings>
+                                <outputBridging>
+                                    <uid v="1353707635"/>
+                                    <identifier v="output"/>
+                                </outputBridging>
+                            </outputBridgings>
+                        </compInstance>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353708445"/>
+                    <GUILayout>
+                        <gpos v="176 624 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353708446"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <compImplementation>
+                        <compInstance>
+                            <path v="pkg:///crystal_2?dependency=1354185149"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="scale"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueInt32 v="2"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                            <outputBridgings>
+                                <outputBridging>
+                                    <uid v="1353708446"/>
+                                    <identifier v="output"/>
+                                </outputBridging>
+                            </outputBridgings>
+                        </compInstance>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353713752"/>
+                    <GUILayout>
+                        <gpos v="176 784 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353713753"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353713754"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353713755"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353713756"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353713757"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353713758"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353713759"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353713760"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353713761"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <compImplementation>
+                        <compInstance>
+                            <path v="pkg:///bricks_005?dependency=1353708623"/>
+                            <parameters/>
+                            <outputBridgings>
+                                <outputBridging>
+                                    <uid v="1353713753"/>
+                                    <identifier v="diffuse"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353713754"/>
+                                    <identifier v="basecolor"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353713755"/>
+                                    <identifier v="normal"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353713756"/>
+                                    <identifier v="specular"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353713757"/>
+                                    <identifier v="glossiness"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353713758"/>
+                                    <identifier v="roughness"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353713759"/>
+                                    <identifier v="metallic"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353713760"/>
+                                    <identifier v="ambient_occlusion"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353713761"/>
+                                    <identifier v="height"/>
+                                </outputBridging>
+                            </outputBridgings>
+                        </compInstance>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353714198"/>
+                    <GUILayout>
+                        <gpos v="400 176 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353714199"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="opacity"/>
+                            <connRef v="1353708445"/>
+                            <connRefOutput v="1353708446"/>
+                        </connection>
+                        <connection>
+                            <identifier v="source"/>
+                            <connRef v="1353697185"/>
+                            <connRefOutput v="1353697186"/>
+                        </connection>
+                        <connection>
+                            <identifier v="destination"/>
+                            <connRef v="1353707634"/>
+                            <connRefOutput v="1353707635"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="blend"/>
+                            <parameters/>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353716854"/>
+                    <GUILayout>
+                        <gpos v="176 976 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353716855"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353716856"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353716857"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353716858"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353716859"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353716860"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353716861"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353716862"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353716863"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <compImplementation>
+                        <compInstance>
+                            <path v="pkg:///gravel?dependency=1353715945"/>
+                            <parameters/>
+                            <outputBridgings>
+                                <outputBridging>
+                                    <uid v="1353716855"/>
+                                    <identifier v="diffuse"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353716856"/>
+                                    <identifier v="basecolor"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353716857"/>
+                                    <identifier v="normal"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353716858"/>
+                                    <identifier v="specular"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353716859"/>
+                                    <identifier v="glossiness"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353716860"/>
+                                    <identifier v="roughness"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353716861"/>
+                                    <identifier v="metallic"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353716862"/>
+                                    <identifier v="ambient_occlusion"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353716863"/>
+                                    <identifier v="height"/>
+                                </outputBridging>
+                            </outputBridgings>
+                        </compInstance>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353716957"/>
+                    <GUILayout>
+                        <gpos v="400 784 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353716958"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="destination"/>
+                            <connRef v="1353713752"/>
+                            <connRefOutput v="1353713754"/>
+                        </connection>
+                        <connection>
+                            <identifier v="opacity"/>
+                            <connRef v="1353697343"/>
+                            <connRefOutput v="1353697344"/>
+                        </connection>
+                        <connection>
+                            <identifier v="source"/>
+                            <connRef v="1353716854"/>
+                            <connRefOutput v="1353716856"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="blend"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="blendingmode"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueInt32 v="9"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353739337"/>
+                    <GUILayout>
+                        <gpos v="176 1168 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353739338"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353739339"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353739340"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353739341"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353739342"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353739343"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353739344"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353739345"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                        <compOutput>
+                            <uid v="1353739346"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <compImplementation>
+                        <compInstance>
+                            <path v="pkg:///tiles_008?dependency=1353739003"/>
+                            <parameters/>
+                            <outputBridgings>
+                                <outputBridging>
+                                    <uid v="1353739338"/>
+                                    <identifier v="diffuse"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353739339"/>
+                                    <identifier v="basecolor"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353739340"/>
+                                    <identifier v="normal"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353739341"/>
+                                    <identifier v="specular"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353739342"/>
+                                    <identifier v="glossiness"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353739343"/>
+                                    <identifier v="roughness"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353739344"/>
+                                    <identifier v="metallic"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353739345"/>
+                                    <identifier v="ambient_occlusion"/>
+                                </outputBridging>
+                                <outputBridging>
+                                    <uid v="1353739346"/>
+                                    <identifier v="height"/>
+                                </outputBridging>
+                            </outputBridgings>
+                        </compInstance>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353787366"/>
+                    <GUILayout>
+                        <gpos v="400 496 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353787367"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353707634"/>
+                            <connRefOutput v="1353707635"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="blur"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="intensity"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat1 v="1"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353788370"/>
+                    <GUILayout>
+                        <gpos v="400 1040 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353788371"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353739337"/>
+                            <connRefOutput v="1353739339"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="blur"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="intensity"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat1 v="5"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353795026"/>
+                    <GUILayout>
+                        <gpos v="400 336 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353795027"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353708445"/>
+                            <connRefOutput v="1353708446"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="curve"/>
+                            <parameters/>
+                            <paramsArrays>
+                                <paramsArray>
+                                    <name v="curveluminance"/>
+                                    <uid v="1353795113"/>
+                                    <paramsArrayCells>
+                                        <paramsArrayCell>
+                                            <uid v="1353795114"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0 0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="left"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0 0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLeftBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="right"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.100000001 0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isRightBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLocked"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353795115"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="1 1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="left"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.899999976 1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLeftBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="right"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="1 1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isRightBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLocked"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353795116"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.25 0.449999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="left"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.150000006 0.449999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLeftBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="right"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.349999994 0.449999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isRightBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLocked"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353795659"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.449999988 0.699999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="left"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.349999994 0.699999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLeftBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="right"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.550000012 0.699999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isRightBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLocked"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353795715"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.800000012 0.300000012"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="left"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.699999988 0.300000012"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLeftBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="right"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.899999976 0.300000012"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isRightBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLocked"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                    </paramsArrayCells>
+                                </paramsArray>
+                            </paramsArrays>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353808102"/>
+                    <GUILayout>
+                        <gpos v="400 912 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353808103"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353739337"/>
+                            <connRefOutput v="1353739339"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="curve"/>
+                            <parameters/>
+                            <paramsArrays>
+                                <paramsArray>
+                                    <name v="curveluminance"/>
+                                    <uid v="1353808126"/>
+                                    <paramsArrayCells>
+                                        <paramsArrayCell>
+                                            <uid v="1353808127"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0 0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="left"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0 0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLeftBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="right"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.100000001 0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isRightBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLocked"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353808128"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="1 1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="left"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.899999976 1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLeftBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="right"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="1 1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isRightBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLocked"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353808129"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.25 0.449999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="left"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.150000006 0.449999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLeftBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="right"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.349999994 0.449999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isRightBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLocked"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353808184"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.449999988 0.699999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="left"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.349999994 0.699999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLeftBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="right"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.550000012 0.699999988"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isRightBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLocked"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353808228"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.800000012 0.300000012"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="left"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.699999988 0.300000012"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLeftBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="right"/>
+                                                    <paramValue>
+                                                        <constantValueFloat2 v="0.899999976 0.300000012"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isRightBroken"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="isLocked"/>
+                                                    <paramValue>
+                                                        <constantValueBool v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                    </paramsArrayCells>
+                                </paramsArray>
+                            </paramsArrays>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353811637"/>
+                    <GUILayout>
+                        <gpos v="400 656 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353811638"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353707634"/>
+                            <connRefOutput v="1353707635"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="dirmotionblur"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="intensity"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat1 v="5"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353820811"/>
+                    <GUILayout>
+                        <gpos v="400 1168 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353820812"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353739337"/>
+                            <connRefOutput v="1353739339"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="dirmotionblur"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="intensity"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat1 v="5"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353880989"/>
+                    <GUILayout>
+                        <gpos v="592 176 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353880990"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353697343"/>
+                            <connRefOutput v="1353697344"/>
+                        </connection>
+                        <connection>
+                            <identifier v="inputintensity"/>
+                            <connRef v="1353697444"/>
+                            <connRefOutput v="1353697445"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="directionalwarp"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="intensity"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat1 v="20"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353882620"/>
+                    <GUILayout>
+                        <gpos v="592 784 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353882621"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353713752"/>
+                            <connRefOutput v="1353713754"/>
+                        </connection>
+                        <connection>
+                            <identifier v="inputintensity"/>
+                            <connRef v="1353707634"/>
+                            <connRefOutput v="1353707635"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="directionalwarp"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="intensity"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat1 v="20"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353890580"/>
+                    <GUILayout>
+                        <gpos v="592 336 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353890581"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="mask"/>
+                            <connRef v="1353697444"/>
+                            <connRefOutput v="1353697445"/>
+                        </connection>
+                        <connection>
+                            <identifier v="source"/>
+                            <connRef v="1353697343"/>
+                            <connRefOutput v="1353697344"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="distance"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="colorswitch"/>
+                                    <paramValue>
+                                        <constantValueBool v="0"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353894008"/>
+                    <GUILayout>
+                        <gpos v="592 912 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353894009"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="mask"/>
+                            <connRef v="1353697444"/>
+                            <connRefOutput v="1353697445"/>
+                        </connection>
+                        <connection>
+                            <identifier v="source"/>
+                            <connRef v="1353713752"/>
+                            <connRefOutput v="1353713754"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="distance"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="colorswitch"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueBool v="1"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353896837"/>
+                    <GUILayout>
+                        <gpos v="592 496 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353896838"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="inputgradient"/>
+                            <connRef v="1353697444"/>
+                            <connRefOutput v="1353697445"/>
+                        </connection>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353708445"/>
+                            <connRefOutput v="1353708446"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="emboss"/>
+                            <parameters/>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353897349"/>
+                    <GUILayout>
+                        <gpos v="592 1040 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353897350"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353739337"/>
+                            <connRefOutput v="1353739339"/>
+                        </connection>
+                        <connection>
+                            <identifier v="inputgradient"/>
+                            <connRef v="1353697343"/>
+                            <connRefOutput v="1353697344"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="emboss"/>
+                            <parameters/>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353903223"/>
+                    <GUILayout>
+                        <gpos v="176 -48 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353903224"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <compImplementation>
+                        <compInputBridge>
+                            <entry v="1353903222"/>
+                            <parameters/>
+                        </compInputBridge>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353903236"/>
+                    <GUILayout>
+                        <gpos v="592 -48 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353903237"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353903223"/>
+                            <connRefOutput v="1353903224"/>
+                        </connection>
+                        <connection>
+                            <identifier v="inputgradient"/>
+                            <connRef v="1353697185"/>
+                            <connRefOutput v="1353697186"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="emboss"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="intensity"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat1 v="2"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353955055"/>
+                    <GUILayout>
+                        <gpos v="592 656 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353955056"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353708445"/>
+                            <connRefOutput v="1353708446"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="gradient"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="colorswitch"/>
+                                    <paramValue>
+                                        <constantValueBool v="1"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                            <paramsArrays>
+                                <paramsArray>
+                                    <name v="gradientrgba"/>
+                                    <uid v="1353955093"/>
+                                    <paramsArrayCells>
+                                        <paramsArrayCell>
+                                            <uid v="1353958184"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat1 v="0"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="midpoint"/>
+                                                    <paramValue>
+                                                        <constantValueFloat1 v="-1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="value"/>
+                                                    <paramValue>
+                                                        <constantValueFloat4 v="0 0.0980392247 1 1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353958185"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat1 v="1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="midpoint"/>
+                                                    <paramValue>
+                                                        <constantValueFloat1 v="-1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="value"/>
+                                                    <paramValue>
+                                                        <constantValueFloat4 v="0.843137324 0.156862751 0.80392164 1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353958186"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat1 v="0.150000006"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="midpoint"/>
+                                                    <paramValue>
+                                                        <constantValueFloat1 v="-1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="value"/>
+                                                    <paramValue>
+                                                        <constantValueFloat4 v="0.0588235334 0.70588237 0.764705956 1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353958187"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat1 v="0.550000012"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="midpoint"/>
+                                                    <paramValue>
+                                                        <constantValueFloat1 v="-1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="value"/>
+                                                    <paramValue>
+                                                        <constantValueFloat4 v="0.862745166 0.941176534 0.294117659 1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                        <paramsArrayCell>
+                                            <uid v="1353958188"/>
+                                            <parameters>
+                                                <parameter>
+                                                    <name v="position"/>
+                                                    <paramValue>
+                                                        <constantValueFloat1 v="0.649999976"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="midpoint"/>
+                                                    <paramValue>
+                                                        <constantValueFloat1 v="-1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                                <parameter>
+                                                    <name v="value"/>
+                                                    <paramValue>
+                                                        <constantValueFloat4 v="0.90196085 0.272804826 0.0196078401 1"/>
+                                                    </paramValue>
+                                                </parameter>
+                                            </parameters>
+                                        </paramsArrayCell>
+                                    </paramsArrayCells>
+                                </paramsArray>
+                            </paramsArrays>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353961321"/>
+                    <GUILayout>
+                        <gpos v="592 1168 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353961322"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353739337"/>
+                            <connRefOutput v="1353739339"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="grayscaleconversion"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="channelsweights"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat4 v="0.333332986 0.333332986 0.333332986 0"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353966293"/>
+                    <GUILayout>
+                        <gpos v="784 176 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353966294"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353707634"/>
+                            <connRefOutput v="1353707635"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="levels"/>
+                            <parameters/>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353968607"/>
+                    <GUILayout>
+                        <gpos v="784 784 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353968608"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353716854"/>
+                            <connRefOutput v="1353716856"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="levels"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="levelinlow"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat4 v="0.100000001 0.100000001 0.100000001 0"/>
+                                    </paramValue>
+                                </parameter>
+                                <parameter>
+                                    <name v="levelinhigh"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat4 v="0.600000024 0.600000024 0.600000024 1"/>
+                                    </paramValue>
+                                </parameter>
+                                <parameter>
+                                    <name v="levelinmid"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat4 v="0.550000012 0.550000012 0.550000012 0.5"/>
+                                    </paramValue>
+                                </parameter>
+                                <parameter>
+                                    <name v="levelouthigh"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat4 v="0.5 0.5 0.5 1"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1353972149"/>
+                    <GUILayout>
+                        <gpos v="784 336 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1353972150"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353708445"/>
+                            <connRefOutput v="1353708446"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="normal"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="input2alpha"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueBool v="0"/>
+                                    </paramValue>
+                                </parameter>
+                                <parameter>
+                                    <name v="intensity"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat1 v="5"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1354045310"/>
+                    <GUILayout>
+                        <gpos v="784 496 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1354045311"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353697444"/>
+                            <connRefOutput v="1353697445"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="sharpen"/>
+                            <parameters/>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1354046436"/>
+                    <GUILayout>
+                        <gpos v="784 912 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1354046437"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353713752"/>
+                            <connRefOutput v="1353713754"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="sharpen"/>
+                            <parameters/>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1354062513"/>
+                    <GUILayout>
+                        <gpos v="784 1040 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1354062514"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353739337"/>
+                            <connRefOutput v="1353739339"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="transformation"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="matrix22"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat4 v="0.833333313 0 0 1.42857146"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1354065373"/>
+                    <GUILayout>
+                        <gpos v="784 656 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1354065374"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353697343"/>
+                            <connRefOutput v="1353697344"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="transformation"/>
+                            <parameters>
+                                <parameter>
+                                    <name v="matrix22"/>
+                                    <relativeTo v="0"/>
+                                    <paramValue>
+                                        <constantValueFloat4 v="0.589255631 -0.707106769 0.589255631 0.707106769"/>
+                                    </paramValue>
+                                </parameter>
+                            </parameters>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1354072996"/>
+                    <GUILayout>
+                        <gpos v="976 176 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1354072997"/>
+                            <comptype v="2"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353697343"/>
+                            <connRefOutput v="1353697344"/>
+                        </connection>
+                        <connection>
+                            <identifier v="inputgradient"/>
+                            <connRef v="1353697444"/>
+                            <connRefOutput v="1353697445"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="warp"/>
+                            <parameters/>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+                <compNode>
+                    <uid v="1354073579"/>
+                    <GUILayout>
+                        <gpos v="784 1168 0"/>
+                    </GUILayout>
+                    <compOutputs>
+                        <compOutput>
+                            <uid v="1354073580"/>
+                            <comptype v="1"/>
+                        </compOutput>
+                    </compOutputs>
+                    <connections>
+                        <connection>
+                            <identifier v="input1"/>
+                            <connRef v="1353739337"/>
+                            <connRefOutput v="1353739339"/>
+                        </connection>
+                        <connection>
+                            <identifier v="inputgradient"/>
+                            <connRef v="1353708445"/>
+                            <connRefOutput v="1353708446"/>
+                        </connection>
+                    </connections>
+                    <compImplementation>
+                        <compFilter>
+                            <filter v="warp"/>
+                            <parameters/>
+                        </compFilter>
+                    </compImplementation>
+                </compNode>
+            </compNodes>
+            <baseParameters>
+                <parameter>
+                    <name v="outputsize"/>
+                    <relativeTo v="0"/>
+                    <paramValue>
+                        <constantValueInt2 v="9 9"/>
+                    </paramValue>
+                </parameter>
+            </baseParameters>
+            <root/>
+        </graph>
+    </content>
+</package>
