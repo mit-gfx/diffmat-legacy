@@ -1,5 +1,5 @@
-<div align="left">
-  <img width="500px" src="misc/final_logo.svg">
+<div align="middle">
+  <img width="500px" src="misc/diffmat_logo.png">
 </div>
 <br/>
 
